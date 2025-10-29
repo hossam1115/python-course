@@ -1,0 +1,31 @@
+import numpy as np
+
+A = np.array([10, 20, 30, 40, 50])
+B = np.array([5, 4, 3, 2, 1])
+addition = A + B      # جمع كل عنصر من A مع العنصر المقابل له في B
+subtraction = A - B   # طرح كل عنصر من A من العنصر المقابل له في B
+multiplication = A * B # ضرب كل عنصر من A في العنصر المقابل له في B
+division = A / B      # قسمة كل عنصر من A على العنصر المقابل له في B
+
+mean_A = np.mean(A)  # المتوسط الحسابي للمصفوفة
+max_A = np.max(A)    # أكبر قيمة في المصفوفة
+min_A = np.min(A)    # أصغر قيمة في المصفوفة
+
+dot_product = np.dot(A, B)
+# حاصل الضرب الداخلي بين المصفوفتين A و B
+
+A_reshaped = A.reshape(5, 1)
+# يشكل A إلى مصفوفة عمودية
+
+print("Addition:\n", addition)
+print("Subtraction:\n", subtraction)
+print("Multiplication:\n", multiplication)
+print("Division:\n", division)
+print("Mean of A:", mean_A)
+print("Max of A:", max_A)
+print("Min of A:", min_A)
+print("Dot Product of A and B:", dot_product)
+print("Reshaped A:\n", A_reshaped)
+
+
+
