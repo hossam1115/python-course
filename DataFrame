@@ -1,0 +1,23 @@
+import pandas as pd
+data = {
+    "Name": ["hossam", "ali", "omr", "sara", "malika"],
+    "Age": [20, 22, 19, 21, 20],
+    "Grade": ["A", "B", "A", "C", "B"],
+    "Marks": [85, 78, 92, 65, 74]
+}
+
+students_data = pd.DataFrame(data)
+
+students_data.head(3)
+students_data[["Name", "Marks"]]
+# الخطوة 3: عرض أول 3 صفوف من الجدول
+print("First 3 rows:")
+print(students_data.head(3))
+# الخطوة 4: عرض أعمدة معينة فقط (Name و Marks)
+print("\nName and Marks columns:")
+print(students_data[["Name", "Marks"]])
+# الخطوة 5: تصفية البيانات لعرض الطلاب الحاصلين على الدرجة 'A'
+print("\nStudents with Grade 'A':")
+print(students_data[students_data["Grade"] == "A"])
+
+
